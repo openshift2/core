@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: AWS Hosted Runners
         id: aws_hosted_runners
-        uses: samd2/aws-hosted-runners@v0.1.8
+        uses: samd2/aws-hosted-runners@v0.1.13
 
   posix:
     defaults:
@@ -505,6 +505,10 @@ jobs:
       matrix:
         include:
           - toolset: msvc-14.0
+            cxxstd: "14"
+            addrmd: 32,64
+            os: 'windows-2019-no-aws'
+          - toolset: msvc-14.1
             cxxstd: "14"
             addrmd: 32,64
             os: 'windows-2019'
