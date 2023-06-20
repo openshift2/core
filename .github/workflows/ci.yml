@@ -28,8 +28,8 @@ jobs:
       - name: AWS Hosted Runners
         id: aws_hosted_runners
         uses: samd2/aws-hosted-runners@v0.1.13
-        with:
-          self_hosted_runners_override: 'false'
+        # with:
+        #  self_hosted_runners_override: 'false'
 
 #   posix:
 #     defaults:
